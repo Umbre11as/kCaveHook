@@ -16,6 +16,11 @@ if (!status) {
 }
 ```
 
+### Real example
+https://github.com/Umbre11as/NoBsodDriver/blob/master/src/main.cpp#L6-L16
+
+https://github.com/Umbre11as/NoBsodDriver/blob/master/src/main.cpp#L21-L27
+
 ### How it works
 Look at my past hooks in usermode: https://github.com/Umbre11as/CaveHook
 
