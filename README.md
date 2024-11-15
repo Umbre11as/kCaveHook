@@ -17,7 +17,7 @@ if (!status) {
 ```
 
 ### Real example
-https://github.com/Umbre11as/NoBsodDriver/blob/master/src/main.cpp#L6-L16
+https://github.com/Umbre11as/NoBsodDriver/blob/264ae84ea81ff8bb48f0a2c651dc181eb470462d/src/main.cpp#L6-L16
 
 https://github.com/Umbre11as/NoBsodDriver/blob/master/src/main.cpp#L21-L27
 
