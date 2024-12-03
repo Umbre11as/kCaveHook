@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.27)
-project(kCaveHook)
+project(kCaveHook LANGUAGES C)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
@@ -16,7 +16,7 @@ endif()
 
 add_subdirectory(thirdparty/Zydis)
 
-file(GLOB_RECURSE SOURCES "src/*.cpp")
+file(GLOB_RECURSE SOURCES "src/*.c")
 
 wdk_add_library(kCaveHook STATIC ${SOURCES})
 

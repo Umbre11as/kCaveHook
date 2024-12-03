@@ -1,8 +1,8 @@
 #pragma once
 
-enum Errors : int {
+typedef enum {
     OK = 0,
     BUFFER_NOT_ALLOCATED = 1,
     CANNOT_READ_MEMORY = 2,
     CANNOT_WRITE_MEMORY = 3
-};
+} Errors;

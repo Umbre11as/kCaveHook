@@ -3,10 +3,10 @@
 #include <ntifs.h>
 #include "Errors.h"
 
-struct ByteBuffer {
+typedef struct {
     UCHAR* buffer;
     SIZE_T size;
-};
+} ByteBuffer;
 
 typedef struct HOOK_DATA_ {
     ULONGLONG Target;
@@ -15,6 +15,6 @@ typedef struct HOOK_DATA_ {
     ByteBuffer Prologue;
 } HOOK_DATA, *PHOOK_DATA, *LPHOOK_DATA;
 
-bool CaveHookEx(IN ULONGLONG target, IN PVOID detour, OUT PVOID* original, OUT HOOK_DATA* hookData);
-bool CaveHook(IN ULONGLONG target, IN PVOID detour, OUT PVOID* original);
+BOOLEAN CaveHookEx(IN ULONGLONG target, IN PVOID detour, OUT PVOID* original, OUT HOOK_DATA* hookData);
+BOOLEAN CaveHook(IN ULONGLONG target, IN PVOID detour, OUT PVOID* original);
 int CaveLastError();
