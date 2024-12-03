@@ -20,5 +20,5 @@ file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 wdk_add_library(kCaveHook STATIC ${SOURCES})
 
-target_include_directories(kCaveHook PRIVATE headers)
+target_include_directories(kCaveHook PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/headers)
 target_link_libraries(kCaveHook PRIVATE Zydis)
